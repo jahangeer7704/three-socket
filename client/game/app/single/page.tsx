@@ -29,7 +29,7 @@ const Box = ({ click, value }: any) => {
         </div>
     )
 }
-function page() {
+function Page() {
     const [board, setBoard] = useState(Array(9).fill(null))
     const [isX, setIsX] = useState(true)
     const handleClick = (index: number) => {
@@ -82,4 +82,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

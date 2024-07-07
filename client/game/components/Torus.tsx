@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 
 export default function Torus(props: any) {
-    const { nodes, materials } = useGLTF('/torus.glb')
+    const { nodes, materials } = useGLTF('/torus.glb') as unknown as any
     const refer = useRef(null)
 
     return (
