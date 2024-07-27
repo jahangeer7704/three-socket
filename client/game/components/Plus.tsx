@@ -23,6 +23,11 @@ export function Model(props: any) {
   return (
     <group {...props} dispose={null}>
       <mesh
+      onClick={()=>{
+        console.log("clicked");
+        
+      }}
+      
         castShadow
         ref={refer}
         receiveShadow
